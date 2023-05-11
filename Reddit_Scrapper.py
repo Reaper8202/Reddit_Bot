@@ -18,7 +18,7 @@ def Scrapper ():
     # Set up Reddit API credentials
     client_id = 'pnZ38gjyqS9e7LiahmCgVQ'
     client_secret = 'Xbn2Wp5Ezs8i57xt1AB5AIJMg9vFZw'
-    user_agent = "python:askreddit_scraper:v1.0 (by /u/your_reddit_username)"
+    user_agent = "python:askreddit_scraper:v1.0"
 
     # Initialize praw instance
     reddit = praw.Reddit(client_id=client_id,
@@ -74,6 +74,7 @@ def tts_converter(prev_output):
     tts.save(output_file)
 
     print(f"Audio saved in {output_file}.")
+
 
 print("Searching for popular posts")
 tts_converter(Scrapper())
