@@ -7,7 +7,7 @@ from datetime import datetime, timedelta
 dursec = 3
 
 # intializing .txt file locared in the same folder as this python script
-inputtxt = 'words.txt'
+inputtxt = '/Users/derek/Desktop/Python Code/Reddit Optimization/output.txt'
 subpath = os.path.join(os.path.dirname(__file__), inputtxt)
 subtxt = open(subpath).read()
 
