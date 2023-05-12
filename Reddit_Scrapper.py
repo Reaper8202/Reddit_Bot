@@ -2,6 +2,9 @@ import praw
 import os
 import random
 from gtts import gTTS
+from gtts import gTTS
+from pydub import AudioSegment
+from pydub.playback import play
 
 def Scrapper ():
     def unique_filename(filename):
@@ -74,6 +77,8 @@ def tts_converter(prev_output):
     tts.save(output_file)
 
     print(f"Audio saved in {output_file}.")
+
+
 
 
 print("Searching for popular posts")
